@@ -8,60 +8,58 @@
   rel="stylesheet" 
   integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
    crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Home</title>
 </head>
 <body>
   <header>
-    <div class="headerbody">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <img src="images/Logo.png" class="navbar-brand"/>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <div class="intro">
-      <h1>Hi, I'm Alvin Alvaro</h1>
-    </div>
-  
-    <div id="about-me" class="typewriter">
-      <p class="multipleStrings"></p>
-    </div>
-    <div class="text-center">
-    <button type="button" class="btn btn-outline-primary">Contact Me</button>
-  </div>
-    <div class="fixed-bottom text-center">
-      <button id="scrollBtn" type="button" class="btn btn-outline-primary"></button>
-  </div>
-</header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" aria-label="Eighth navbar example">
+    <div class="container">
+      <img src="images/Logo.png">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+<section class="home" id="home">
+  <div class="home-text">
+      <div class="slide">
+          <span class="one">Hello</span>
+          <span class="two">I'm</span>
+      </div>
+      <h1>Alvin Alvaro</h1>
+      <h3>Full Stack<span> Web Developer.</span></h3>
+      <p>“Responsive Web Design always plays important role <br> whenever going to promote your website.”</p>
+      <div class="button">
+          <a href="#" class="btn">Contact Me</a>
+      </div>
+  </div>
+ </section>
 
 <!-- Section -->
 
-<section>
-  <div id="scrollContent">
-    <div>
 
-    </div>
-  </div>
-</section>
 
 
 
@@ -80,7 +78,7 @@
     speed: 50,
     waitUntilVisible: true,
   }).go();
-
 </script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
