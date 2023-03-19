@@ -16,13 +16,11 @@
    margin-top: 20px;
   }
   
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    margin: 0 40px;
+  .navbar {
+    background-color: transparent !important;
+  }
   
+  .navbar-nav .nav-link {
     color: #fff;
   }
   
@@ -44,10 +42,6 @@
     background-color: #fa24;
   }
   
-  /* End of header */
-  
-  /* Start Of Intro */
-  
   .intro {
     display: flex;
     justify-content: center;
@@ -59,7 +53,7 @@
     font-size: 200px;
   }
   
-  .about-me {
+  #about-me {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,5 +63,50 @@
     font-family: sans-serif;
     font-size: 20px;
   }
+
   
   
+  /* Scrolldown */
+
+  #scrollBtn {
+
+}
+
+#scrollContent {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#scrollBtn:hover {
+  background-color: #296FFF;
+}
+
+#scrollBtn:active {
+  background-color: #296FFF;
+}
+
+#scrollBtn:focus {
+  outline: none;
+}
+
+#scrollBtn:after {
+  content: "\2193"; /* Unicode character for down arrow */
+  margin-left: 5px;
+}
+
+/* Scroll animation */
+#scrollBtn.scrollDown {
+  animation-name: scrollDown;
+  animation-duration: 0.5s;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Section */
