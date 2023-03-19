@@ -50,7 +50,7 @@
       </div>
       <h1>Alvin Alvaro</h1>
       <h3>Full Stack<span> Web Developer.</span></h3>
-      <p>“Responsive Web Design always plays important role <br> whenever going to promote your website.”</p>
+      <p id="simpleUsage"></p>
       <div class="button">
           <a href="#" class="btn">Contact Me</a>
       </div>
@@ -73,11 +73,11 @@
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script>
-  new TypeIt(".multipleStrings", {
-    strings: ["Hi i'm Alvin Alvaro A Full Stack Web Developer Based On Trece Martires city Cavite, Philippines"],
-    speed: 50,
-    waitUntilVisible: true,
-  }).go();
+  new TypeIt("#simpleUsage", {
+  strings: "“Responsive Web Design always plays important role <br> whenever going to promote your website.”",
+  speed: 50,
+  waitUntilVisible: true,
+}).go();
 </script>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
