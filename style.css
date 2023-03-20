@@ -18,24 +18,12 @@
     --h2-font: 3rem;
     --p-font: 1.1rem;
 }
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
 }
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 22px 15%;
-    border-bottom: 1px solid transparent;
-    transition: all .45s ease;
-}
+
 span{
     color: var(--min-color);
 }
@@ -146,93 +134,13 @@ section{
 }
 
   
-  
-  /* Scrolldown */
-
-  .text-center {
-    height: 300px;
-}
-
-#scrollContent {
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-#scrollBtn:hover {
-  background-color: #296FFF;
-}
-
-#scrollBtn:active {
-  background-color: #296FFF;
-}
-
-#scrollBtn:focus {
-  outline: none;
-}
-
-#scrollBtn:after {
-  content: "\2193"; /* Unicode character for down arrow */
-  margin-left: 5px;
-}
-
-/* Scroll animation */
-#scrollBtn.scrollDown {
-  animation-name: scrollDown;
-  animation-duration: 0.5s;
-}
-
-@keyframes scrollDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100%);
-  }
-}
 
 /* Section */
 
-.highlights {
-  background-color: hsla(0, 97%, 44%, 0.815);
-  text-align: center;
-  color: #ffffff;
 
-  display: block;
-}
 
-.feature-icon {
-  width: 4rem;
-  height: 4rem;
-  border-radius: .75rem;
-}
+/* Services */
 
-.icon-link > .bi {
-  margin-top: .125rem;
-  margin-left: .125rem;
-  fill: currentcolor;
-  transition: transform .25s ease-in-out;
-}
-.icon-link:hover > .bi {
-  transform: translate(.25rem);
-}
-
-.icon-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: .75rem;
-}
-
-.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
-.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
-.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
-
-.card-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.feature-icon-small {
-  width: 3rem;
-  height: 3rem;
+.services {
+  background-color: var(--second-bg-color);
 }
