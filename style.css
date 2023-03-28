@@ -183,6 +183,15 @@ section{
 
 /* Project */
 
+.project {
+    text-align: center;
+}
+
+.project h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+    padding-top: 0%;
+}
 
 /* Contact */
 .contact{
