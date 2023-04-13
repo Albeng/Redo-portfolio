@@ -13,3 +13,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   // Send the email
   if (mail($to, $subject, $body, $headers
+};
